@@ -1,0 +1,17 @@
+{
+  "version": "v2_gentle",
+  "config": {
+    "BLEND_ALPHA": 0.6,
+    "DEFAULT_KEEP_STRENGTH": 0.3
+  },
+  "RMSE": 0.0010086691201658703,
+  "MAE": 0.0005189375917487643,
+  "QLIKE": -6.333458533060229,
+  "coverage_pct": 78.97727272727273,
+  "avg_width": 0.0013657722567214838,
+  "regime_distribution": {
+    "Calm": 388,
+    "Volatile": 79,
+    "Extreme": 61
+  }
+}

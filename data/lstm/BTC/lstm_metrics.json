@@ -1,0 +1,15 @@
+{
+  "config": {
+    "USE_LOG_TARGET": true,
+    "USE_QLIKE_LOSS": true,
+    "USE_HAR_FEATURE": true
+  },
+  "RMSE": 0.0010149700101464987,
+  "MAE": 0.000535419734660536,
+  "QLIKE": -6.326120853424072,
+  "coverage_pct": 78.78787878787878,
+  "avg_width": 0.0014056323561817408,
+  "best_val_loss": -6.385639091707626,
+  "epochs_trained": 36,
+  "n_params": 129667
+}

@@ -1,0 +1,55 @@
+{
+  "symbol": "ETH",
+  "n_obs": 506,
+  "interval_calibration": {
+    "LSTM only": {
+      "coverage_pct": 82.6086956521739,
+      "avg_width": 0.0016087667368438734,
+      "interval_score": 0.0030409493173632523
+    },
+    "Hybrid": {
+      "coverage_pct": 87.94466403162056,
+      "avg_width": 0.0015561414317484274,
+      "interval_score": 0.003064181142514876
+    }
+  },
+  "coverage_by_regime": {
+    "Calm": {
+      "n_days": 385,
+      "coverage": 88.57142857142857,
+      "width": 0.0012865347425663962
+    },
+    "Extreme": {
+      "n_days": 46,
+      "coverage": 84.78260869565217,
+      "width": 0.002395605535295912
+    },
+    "Volatile": {
+      "n_days": 75,
+      "coverage": 86.66666666666667,
+      "width": 0.0024252511193737303
+    }
+  },
+  "mcs": {
+    "included": [
+      "Hybrid",
+      "LSTM"
+    ],
+    "excluded": [
+      "EGARCH",
+      "GARCH",
+      "HAR-RV",
+      "Naive"
+    ],
+    "pvalues": {
+      "Pvalue": {
+        "HAR-RV": 0.006,
+        "Naive": 0.028,
+        "GARCH": 0.028,
+        "EGARCH": 0.07,
+        "LSTM": 0.374,
+        "Hybrid": 1.0
+      }
+    }
+  }
+}

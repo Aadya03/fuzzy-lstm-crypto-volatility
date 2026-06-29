@@ -1,0 +1,55 @@
+{
+  "symbol": "BTC",
+  "n_obs": 506,
+  "interval_calibration": {
+    "LSTM only": {
+      "coverage_pct": 78.06324110671937,
+      "avg_width": 0.0013927935003280633,
+      "interval_score": 0.0023576977641138973
+    },
+    "Hybrid": {
+      "coverage_pct": 78.26086956521739,
+      "avg_width": 0.0013537343417472285,
+      "interval_score": 0.002301149639612568
+    }
+  },
+  "coverage_by_regime": {
+    "Calm": {
+      "n_days": 371,
+      "coverage": 76.81940700808624,
+      "width": 0.0010722728288843724
+    },
+    "Volatile": {
+      "n_days": 76,
+      "coverage": 82.89473684210526,
+      "width": 0.002017649976552243
+    },
+    "Extreme": {
+      "n_days": 59,
+      "coverage": 81.35593220338984,
+      "width": 0.0022683891388139824
+    }
+  },
+  "mcs": {
+    "included": [
+      "EGARCH",
+      "GARCH",
+      "HAR-RV",
+      "Hybrid",
+      "LSTM"
+    ],
+    "excluded": [
+      "Naive"
+    ],
+    "pvalues": {
+      "Pvalue": {
+        "Naive": 0.047,
+        "HAR-RV": 0.144,
+        "EGARCH": 0.144,
+        "GARCH": 0.144,
+        "LSTM": 0.144,
+        "Hybrid": 1.0
+      }
+    }
+  }
+}
